@@ -11,7 +11,6 @@
       --header-color: #1a1a1a;
       --link-color: #0077cc;
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
         --bg-color: #121212;
@@ -20,7 +19,6 @@
         --link-color: #66ccff;
       }
     }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -42,20 +40,11 @@
     section {
       margin-bottom: 40px;
     }
-    .project, .job {
-      margin-top: 20px;
-    }
-    .link {
-      display: block;
-      margin-top: 5px;
-    }
-    .thumbnail {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      margin-top: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .resume-section {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
     @media (max-width: 768px) {
       body {
@@ -68,111 +57,44 @@
   <h1>💻 조재근 | QA Test Automation Engineer</h1>
   <p>테스트 자동화, 생성형 AI, CI/CD 기반 QA 통합 플랫폼 개발에 강점을 가진 QA 엔지니어입니다. 기술로 문제를 해결하고 품질 중심의 개발 문화를 이끄는 것을 지향합니다.</p>
 
-  <section>
-    <h2>🧑‍💼 프로필</h2>
+  <section class="resume-section">
+    <h2>📄 이력서 본문</h2>
+    <p><strong>스킬(기술):</strong> API 테스트 자동화, GUI 테스트 자동화, WEB/WAS, GitHub Actions 기반 CI/CD, 자연어 기반 AI 테스트 플로우 설계, OpenAI API, RPA, Git, Linux, Python, Flask, Shell</p>
+
+    <h3>주요 프로젝트</h3>
     <ul>
-      <li><strong>이름:</strong> 조재근 (Jaekeun Cho)</li>
-      <li><strong>이메일:</strong> jaekeunv@gmail.com</li>
-      <li><strong>생년월일:</strong> 1992.02.04</li>
-      <li><strong>거주지:</strong> 서울 용산구</li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/MaduJoe" target="_blank">github.com/MaduJoe</a></li>
+      <li>SnapTest-CICD: Toss 컨퍼런스를 참고하여 기획/개발한 1인 QA 자동화 프로젝트 (GitHub Actions + Python 기반 테스트 자동 실행 및 리포팅)</li>
+      <li>TestFlow.AI: Streamlit 기반 QA 자동화 통합 플랫폼</li>
+      <li>DBSAFER GUI 자동화: Play & Record 기반 GUI 자동화</li>
+      <li>PNP_QnA: 사내정보 통합 생성형 AI QnA 서비스</li>
+      <li>LIVELINK: 공공데이터 활용 도서검색 REST API 서비스</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>🔧 기술 스택</h2>
+    <h3>자기 소개</h3>
+    <p>테스트 자동화와 OpenAI 기반 AI 도구 활용에 강점을 가진 QA 자동화 엔지니어입니다. CI/CD 기반 자동화 플랫폼 기획 및 개발 경험을 바탕으로 실전 역량을 갖추었고, 다양한 기술을 통해 테스트 효율성과 품질 향상에 기여하고 있습니다. 변화에 유연하며 새로운 기술 흡수 및 실무 적용을 즐깁니다.</p>
+
+    <h3>업무 경험</h3>
     <ul>
-      <li>테스트 자동화: API, GUI (Windows 기반)</li>
-      <li>CI/CD: GitHub Actions</li>
-      <li>AI 도구: OpenAI API, 자연어 처리</li>
-      <li>기타: Python, Flask, Shell, Git, Linux, RPA, OCR</li>
+      <li><strong>2023.08 - 현재</strong>: GUI 자동화 도구 개발, AI QnA 시스템 구축, API 테스트 자동화 시스템 설계</li>
+      <li><strong>2020.08 - 2021.11</strong>: 금융권 웹/WAS 솔루션 미들웨어 엔지니어링, 시스템 관리 및 성능 개선</li>
+      <li><strong>2017.07 - 2017.12</strong>: 공공데이터 기반 도서 검색 시스템 개발</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>🚀 주요 프로젝트</h2>
-
-    <div class="project">
-      <h3>🔹 SnapTest-CICD</h3>
-      <p>Toss 컨퍼런스를 참고해 기획한 1인 QA 자동화 프로젝트</p>
-      <ul>
-        <li>GitHub Actions + Python 기반 테스트 자동 실행</li>
-        <li>CI/CD 연동 및 결과 리포팅</li>
-      </ul>
-      <a class="link" href="https://github.com/MaduJoe/SnapTest-CICD" target="_blank">🔗 GitHub Repository</a>
-      <img class="thumbnail" src="https://via.placeholder.com/600x300?text=SnapTest-CICD" alt="SnapTest-CICD Thumbnail" />
-    </div>
-
-    <div class="project">
-      <h3>🔹 TestFlow.AI</h3>
-      <p>Streamlit 기반 QA 자동화 플랫폼</p>
-      <ul>
-        <li>테스트 관리, 실행, 결과 시각화</li>
-      </ul>
-      <a class="link" href="https://github.com/MaduJoe/TestFlow.AI" target="_blank">🔗 GitHub Repository</a>
-      <img class="thumbnail" src="https://via.placeholder.com/600x300?text=TestFlow.AI" alt="TestFlow.AI Thumbnail" />
-    </div>
-
-    <div class="project">
-      <h3>🔹 DBSAFER GUI 자동화</h3>
-      <p>Play & Record 기반의 Windows GUI 테스트 자동화 도구</p>
-      <a class="link" href="https://github.com/MaduJoe/dbsafer_automation" target="_blank">🔗 GitHub Repository</a>
-      <img class="thumbnail" src="https://via.placeholder.com/600x300?text=DBSAFER+GUI" alt="DBSAFER Thumbnail" />
-    </div>
-
-    <div class="project">
-      <h3>🔹 PNP_QnA</h3>
-      <p>사내 정보를 통합한 OpenAI 기반 QnA 시스템</p>
-      <a class="link" href="https://github.com/MaduJoe/PNP_QnA" target="_blank">🔗 GitHub Repository</a>
-      <img class="thumbnail" src="https://via.placeholder.com/600x300?text=PNP_QnA" alt="PNP_QnA Thumbnail" />
-    </div>
-
-    <div class="project">
-      <h3>🔹 LIVELINK</h3>
-      <p>공공데이터 기반 도서 검색 및 정보 연동 서비스</p>
-      <a class="link" href="https://github.com/MaduJoe/LIVELINK" target="_blank">🔗 GitHub Repository</a>
-      <img class="thumbnail" src="https://via.placeholder.com/600x300?text=LIVELINK" alt="LIVELINK Thumbnail" />
-    </div>
-  </section>
-
-  <section>
-    <h2>💼 경력</h2>
-    <div class="job">
-      <h3>📍 2023.08 ~ 현재 | QA 자동화 및 AI 서비스 개발</h3>
-      <ul>
-        <li>Windows GUI 자동화 프로그램 개발</li>
-        <li>사내 정보 통합 QnA 시스템 구축</li>
-        <li>API 테스트 자동화 시스템 설계</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>📍 2020.08 ~ 2021.11 | 금융권 WAS 솔루션 엔지니어</h3>
-      <ul>
-        <li>웹/WAS 서버 설치, 구성, 운영 및 유지보수</li>
-        <li>시스템 성능 최적화 및 안정화 작업</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>📍 2017.07 ~ 2017.12 | 도서 검색 프로젝트</h3>
-      <ul>
-        <li>공공데이터 기반 도서 검색 시스템 개발</li>
-        <li>REST API 및 HTML5 활용</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>🎓 학력 및 교육</h2>
+    <h3>학력</h3>
     <ul>
-      <li>서강대학교 대학원 (컴퓨터공학 석사)</li>
+      <li>서강대학교 (컴퓨터공학 석사)</li>
       <li>상명대학교 (미디어소프트웨어학과 학사)</li>
-      <li>중앙정보인재개발원: 빅데이터 IT 콘텐츠 정보 시스템 과정 수료 (900시간)</li>
+      <li>중앙정보인재개발원 빅데이터 IT 콘텐츠 정보시스템 교육 수료</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>🏁 커리어 목표</h2>
-    <p>기술 중심의 QA 자동화 전문가로서 변화에 유연하고 새로운 기술을 빠르게 흡수해 품질 중심의 개발 문화를 선도하고자 합니다.</p>
+    <h3>개인 정보</h3>
+    <ul>
+      <li>생년월일: 1992년 2월 4일</li>
+      <li>국적: 대한민국</li>
+      <li>이메일: jaekeunv@gmail.com</li>
+      <li>전화: 010-2813-4889</li>
+      <li>주소: 서울 용산구 효창동, 04311</li>
+    </ul>
   </section>
 </body>
 </html>
